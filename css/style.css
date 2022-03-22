@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    width: 100%;
+}
+/* [1] 메인화면 */
+#main {
+    width: 100%;
+    height: 1080px;
+    background-color: #F2F6FF;
+}
+/* 1. 헤더 */
+header {
+    width: 100%;
+    height: 150px;
+}
+/* 로고 */
+.logo {
+    display: block;
+    float: left;
+    width: 300px;
+    height: 100%;
+    margin-left: 180px;
+}
+.logo img {
+    float: left;
+    margin-top: 62px;
+    padding-right: 22px;
+}
+.logo h1 {
+    float: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 47px;
+    line-height: 63px;
+    color: #23233C;
+    margin-top: 63px;
+}
+/* 메인 네비 */
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 450px;
+    height: 150px;
+    margin-left: -225px; 
+}
+.mainNav {
+    width: 100%;
+    height: 114px;
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainNav li {
+    width: 33%;
+    height: 100%;
+}
+.mainNav a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 21px;
+    color: #7F8DA0;
+    line-height: 114px;
+    text-align: center;
+}
+/* 로그인 & 회원가입 */
+.join {
+    float: right;
+    width: 215px;
+    height: 150px;
+    margin-right: 280px;
+    display: flex;
+    padding-top: 36px;
+    box-sizing: border-box;
+}
+.join li {
+    width: 50%;
+    height: 114px;
+}
+.join li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 22px;
+    line-height: 114px;
+    color: #23233C;
+    text-align: center;
+}
+.join li a.register {
+    color: #6BC37C;
+}
+/* 2. 메인 컨텐츠 */
+#intro {
+    width: 100%;
+    height: 930px;
+    background-color: #6BC37C;
+}
+.app_intro {
+    float: left;
+    width: 620px;
+    height: 750px;
+    background-color: white;
+    margin: 65px 0 0 180px;
+}
+.bar {
+    width: 62px;
+    height: 6px;
+    background-color: #23233C;
+    border-radius: 20px;
+    margin-top: 82px;
+}
+.slogan {
+    font-size: 29px;
+    line-height: 40px;
+    color: #7F8DA0;
+    margin-top: 25px;
+}
+.main_msg {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 70px;
+    line-height: 64px;
+    color: #23233C;
+    margin-top: 30px;
+}
+.main_msg > span {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 70px;
+    line-height: 64px;
+    color: #6CC57C;
+}
+.desc {
+    font-size: 23px;
+    line-height: 28px;
+    color: #7F8DA0;
+    margin-top: 22px;
+}
+/* 앱 다운로드 */
+.download {
+    width: 100%;
+    height: 67px;
+    margin-top: 45px;
+}
+.download .btn {
+    float: left;
+    display: block;
+    width: 276px;
+    height: 67px;
+    background-color: #23233C;
+    border-radius: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20;
+    line-height: 67px;
+    text-align: center;
+    color: #ffffff;
+}
+.appIcons {
+    float: left;
+    width: 150px;
+    height: 67px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* [2] 컨텐츠 */
+#contents {
+    width: 100%;
+    height: 1730px;
+    background-color: lightblue;
+}
+
+/* [3] 푸터 */
+footer {
+    width: 100%;
+    height: 540px;
+    background-color: lightseagreen;
+}
