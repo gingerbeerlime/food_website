@@ -6,6 +6,7 @@ body {
 }
 #wrap {
     width: 100%;
+    overflow: hidden;
 }
 /* [1] 메인화면 */
 #main {
@@ -99,16 +100,17 @@ nav {
 #intro {
     width: 100%;
     height: 930px;
-    background-color: #6BC37C;
+    /* background-color: #6BC37C; */
 }
+/* 소개 문구 */
 .app_intro {
     float: left;
     width: 620px;
     height: 750px;
-    background-color: white;
+    /* background-color: white; */
     margin: 65px 0 0 180px;
 }
-.bar {
+.app_intro .bar {
     width: 62px;
     height: 6px;
     background-color: #23233C;
@@ -116,14 +118,14 @@ nav {
     margin-top: 82px;
 }
 .slogan {
-    font-size: 29px;
+    font-size: 27px;
     line-height: 40px;
     color: #7F8DA0;
     margin-top: 25px;
 }
 .main_msg {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 70px;
+    font-size: 67px;
     line-height: 64px;
     color: #23233C;
     margin-top: 30px;
@@ -135,7 +137,7 @@ nav {
     color: #6CC57C;
 }
 .desc {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 28px;
     color: #7F8DA0;
     margin-top: 22px;
@@ -168,13 +170,263 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
-/* [2] 컨텐츠 */
+/* SNS */
+.sns {
+    width: 350px;
+    height: 33px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.sns li, .sns a {
+    font-size: 20px;
+    line-height: 33px;
+    color: #7F8DA0;
+
+}
+.sns a:hover {
+    color: #6CC57C;
+}
+/* 애플리케이션 사진 */
+.main_img {
+    float: left;
+    width: 1080px;
+    height: 850px;
+    margin-top: 65px;
+    position: relative;
+}
+.bgCircle {
+    width: 400px;
+    height: 400px;
+    background-color: #D0F0D6;
+    border-radius: 50%;
+    margin: 130px 0 0 100px;
+}
+.bgSquare {
+    width: 740px;
+    height: 600px;
+    background: transparent linear-gradient(230deg, #F2F6FF 0%, #F2F6FF 74%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 50px 50px 50px #ABB6CC33;
+    border-radius: 49px;
+    transform: rotate(37deg);
+    position: absolute;
+    top: -120px;
+    right: -650px;
+    z-index: 1;
+}
+/* 화면 이미지 */
+.main_img > img {
+    position: absolute;
+}
+.imgLogin {
+    top: 0;
+    left: 155px;
+    z-index: 10;
+    box-shadow: 0px 0px 99px #2A5A7B3B;
+    border-radius: 30px;
+}
+.imgNutri {
+    top: -10px;
+    left: 300px;
+    z-index: 20;
+}
+.imgHome {
+    top: 180px;
+    left: 520px;
+    z-index: 30;
+    box-shadow: 0px 3px 80px #2A5A7B3B;
+    border-radius: 30px;
+}
+.imgWeekly {
+    top: 400px;
+    left: 550px;
+    z-index: 40;
+}
+/* [2] 서브 컨텐츠 */
 #contents {
     width: 100%;
     height: 1730px;
-    background-color: lightblue;
+    background-color: #F2F6FF;
+    position: relative;
 }
-
+/* 배경요소 */
+.bgCircle2 {
+    width: 300px;
+    height: 300px;
+    background-color: #D0F0D6;
+    border-radius: 50%;
+    position: absolute;
+    top: 247px;
+    right: -250px;
+    z-index: 100;
+}
+.bgSquare2, .bgSquare3 {
+    background: transparent linear-gradient(230deg, #F2F6FF 0%, #F2F6FF 74%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 50px 50px 50px #ABB6CC33;
+    border-radius: 49px;
+    position: absolute;
+}
+.bgSquare2 {
+    width: 740px;
+    height: 600px;
+    transform: rotate(37deg);
+    top: 465px;
+    left: -557px;
+    z-index: 110;
+}
+.bgSquare3 {
+    width: 742px;
+    height: 778px;
+    transform: rotate(-21deg);
+    top: 728px;
+    right: -145px;
+    z-index: 120;
+}
+/* 1. 컨텐츠1 */
+#con1 {
+    width: 100%;
+    height: 765px;
+}
+/* 이미지 영역 */
+.con1_img {
+    float: left;
+    width: 840px;
+    height: 100%;
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.con1_img > li {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    width: 306px;
+    height: 440px;
+    background: transparent linear-gradient(144deg, #F2F6FF 0%, #F2F6FF 65%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 50px 50px 50px #ABB6CC33;
+    border-radius: 153px 153px 50px 50px;
+    margin-top: 108px;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+/* 메뉴 이미지 */
+.container img.mn1 {
+    position: absolute;
+    top: -150px;
+    left: -42px;
+    z-index: 210;
+}
+.container img.mn2 {
+    position: absolute;
+    top: -85px;
+    left: -5px;
+    z-index: 220;
+}
+.box2 {
+    margin-top: 268px;
+}
+/* 메뉴정보 */
+.txtBox {
+    width: 100%;
+    height: 150px;
+    margin-top: 220px;
+}
+.txtBox .menu {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 33px;
+    line-height: 38px;
+    color: #23233C;
+}
+/* 영양정보 */
+.nutri {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+.nutri li {
+    width: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+}
+.nutri li:last-child {
+    margin-left: 30px;
+}
+.nutri p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 26px;
+    line-height: 35px;
+    color: #23233C;
+}
+.nutri p.cal {
+    color: #EE6A6E;
+}
+.nutri span {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7F8DA0;
+}
+/* 상세보기 버튼 */
+.goBtn {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #23233C;
+    position: absolute;
+    bottom: -21px;
+    right: -10px;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 설명글 영역 */
+.explanation {
+    float: left;
+    width: 695px;
+    height: 100%;
+    padding: 0 34px;
+    box-sizing: border-box;
+}
+.explanation .bar {
+    width: 62px;
+    height: 6px;
+    background-color: #23233C;
+    border-radius: 20px;
+    margin: 160px 0 37px 0;
+}
+.explanation .ttl {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: #23233C;
+}
+.explanation .ttl > span {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: #6CC57C;
+}
+.explanation .desc {
+    font-size: 25px;
+    line-height: 28px;
+    color: #7F8DA0;
+    margin-top: 90px;
+}
+/* 2. 컨텐츠1 */
+#con2 {
+    width: 100%;
+    height: 965px;
+    background-color: lightgreen;
+}
 /* [3] 푸터 */
 footer {
     width: 100%;
