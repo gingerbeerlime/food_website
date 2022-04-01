@@ -20,19 +20,19 @@ header {
     height: 150px;
 }
 /* 로고 */
-.logo {
+header .logo {
     display: block;
     float: left;
     width: 300px;
     height: 100%;
     margin-left: 180px;
 }
-.logo img {
+header .logo img {
     float: left;
     margin-top: 62px;
     padding-right: 22px;
 }
-.logo h1 {
+header .logo h1 {
     float: left;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 47px;
@@ -41,7 +41,7 @@ header {
     margin-top: 63px;
 }
 /* 메인 네비 */
-nav {
+header nav {
     position: absolute;
     top: 0;
     left: 50%;
@@ -49,18 +49,18 @@ nav {
     height: 150px;
     margin-left: -225px; 
 }
-.mainNav {
+header .mainNav {
     width: 100%;
     height: 114px;
     padding-top: 36px;
     display: flex;
     justify-content: space-between;
 }
-.mainNav li {
+header .mainNav li {
     width: 33%;
     height: 100%;
 }
-.mainNav a {
+header .mainNav a {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -103,14 +103,14 @@ nav {
     /* background-color: #6BC37C; */
 }
 /* 소개 문구 */
-.app_intro {
+.appIntro {
     float: left;
     width: 620px;
     height: 750px;
     /* background-color: white; */
     margin: 65px 0 0 180px;
 }
-.app_intro .bar {
+.appIntro .bar {
     width: 62px;
     height: 6px;
     background-color: #23233C;
@@ -123,14 +123,14 @@ nav {
     color: #7F8DA0;
     margin-top: 25px;
 }
-.main_msg {
+.mainMsg {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 67px;
     line-height: 64px;
     color: #23233C;
     margin-top: 30px;
 }
-.main_msg > span {
+.mainMsg > span {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 70px;
     line-height: 64px;
@@ -161,6 +161,12 @@ nav {
     text-align: center;
     color: #ffffff;
 }
+.download .btn:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 0 6px #777;
+    color: #23233C;
+    transition: 0.3s ease;
+}
 .appIcons {
     float: left;
     width: 150px;
@@ -171,7 +177,7 @@ nav {
     align-items: center;
 }
 /* SNS */
-.sns {
+.appIntro .sns {
     width: 350px;
     height: 33px;
     margin-top: 130px;
@@ -179,13 +185,13 @@ nav {
     justify-content: space-between;
     padding-left: 5px;
 }
-.sns li, .sns a {
+.appIntro .sns li, .sns a {
     font-size: 20px;
     line-height: 33px;
     color: #7F8DA0;
 
 }
-.sns a:hover {
+.appIntro .sns a:hover {
     color: #6CC57C;
 }
 /* 애플리케이션 사진 */
@@ -303,7 +309,7 @@ nav {
     display: flex;
     justify-content: center;
 }
-.container {
+#con1 .container {
     position: relative;
     width: 306px;
     height: 440px;
@@ -315,28 +321,28 @@ nav {
     box-sizing: border-box;
 }
 /* 메뉴 이미지 */
-.container img.mn1 {
+#con1 .container img.mn1 {
     position: absolute;
     top: -150px;
     left: -42px;
     z-index: 210;
 }
-.container img.mn2 {
+#con1 .container img.mn2 {
     position: absolute;
     top: -85px;
     left: -5px;
     z-index: 220;
 }
-.box2 {
+#con1 .box2 {
     margin-top: 268px;
 }
 /* 메뉴정보 */
-.txtBox {
+#con1 .txtBox {
     width: 100%;
     height: 150px;
     margin-top: 220px;
 }
-.txtBox .menu {
+#con1 .txtBox .menu {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 33px;
     line-height: 38px;
@@ -374,7 +380,7 @@ nav {
     color: #7F8DA0;
 }
 /* 상세보기 버튼 */
-.goBtn {
+#con1 .goBtn {
     display: block;
     width: 80px;
     height: 80px;
@@ -388,8 +394,12 @@ nav {
     justify-content: center;
     align-items: center;
 }
+#con1 .goBtn:hover {
+    background-color: #6CC57C;
+    transition: 0.3s ease-in;
+}
 /* 설명글 영역 */
-.explanation {
+#con1 .explanation {
     float: left;
     width: 695px;
     height: 100%;
@@ -421,15 +431,186 @@ nav {
     color: #7F8DA0;
     margin-top: 90px;
 }
-/* 2. 컨텐츠1 */
+/* 2. 컨텐츠2 */
+/* 설명글 영역 */
 #con2 {
     width: 100%;
     height: 965px;
-    background-color: lightgreen;
+}
+#con2 .explanation {
+    float: left;
+    width: 740px;
+    height: 100%;
+    margin-left: 180px;
+    padding-left: 108px;
+    box-sizing: border-box;
+}
+#con2 .explanation .desc {
+    margin-top: 30px;
+}
+/* 이미지 영역 */
+.con2_img {
+    float: left;
+    width: 795px;
+    height: 100%;
+    position: relative;
+}
+/* 화면 스크린샷 */
+.imgYogurt {
+    position: absolute;
+    top: -100px;
+    left: 170px;
+    z-index: 300;
+}
+.imgNutri2 {
+    position: absolute;
+    top: 180px;
+    left: -20px;
+    z-index: 310;
+}
+.ingredients {
+    width: 642px;
+    height: 120px;
+    z-index: 320;
+    position: absolute;
+    top: 600px;
+    left: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+.ingredients li {
+    width: 120px;
+    height: 120px;
+    background-image: url("../image/ingredients.png");
+    border-radius: 50%;
+}
+.ingredients li.yogurt {
+    background-position: -10px -10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.04);
+}
+.ingredients li.kiwi {
+    background-position: -150px -150px;
+    box-shadow: 0 10px 50px rgb(33, 63, 103, 0.33);
+}
+.ingredients li.blueberry {
+    background-position: -150px -10px;
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.15);
+}
+.ingredients li.cherry {
+    background-position: -10px -150px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.04);
 }
 /* [3] 푸터 */
 footer {
+    float: left;
     width: 100%;
     height: 540px;
-    background-color: lightseagreen;
+    background-color: #F2F6FF;
 }
+/* 푸터 상단영역(회사 정보) */
+.companyInfo {
+    margin: 0 auto;
+    width: 1620px;
+    height: 300px;
+    margin-top: 106px;
+    display: flex;
+}
+/* 로고 */
+footer .logo {
+    display: block;
+    width: 350px;
+    height: 86px;
+}
+footer .logo img {
+    float: left;
+    width: 91px;
+    height: 86px;
+}
+footer .logo h1 {
+    float: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 61px;
+    line-height: 86px;
+    color: #23233C;
+    padding-left: 23px;
+}
+/* 회사정보(네비) */
+.infoNav {
+    width: 630px;
+    height: 200px;
+    margin-left: 105px;
+    display: flex;
+}
+.infoNav li {
+    width: 50%;
+    height: 100%;
+}
+.infoNav li > ul {
+    width: 100%;
+    height: 100%;
+}
+.infoNav li ul li {
+   width: 100%;
+   height: 25%;
+}
+.infoNav li ul li.ttl {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 32px;
+    line-height: 50px;
+    color: #6CC57C;
+}
+.infoNav li ul li a {
+    display: block;
+    font-size: 24px;
+    line-height: 50px;
+    color: #3A466D;
+}
+.infoNav li ul li a:hover {
+    color: #6CC57C;
+    transition: 0.2s ease-in;
+}
+/* SNS */
+footer .sns {
+    width: 220px;
+    height: 100%;
+    margin-left: 175px;
+}
+footer .snsIcons {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+footer .snsIcons li {
+    background-image: url("../image/sns_icons.png");
+}
+.snsIcons .instagram {
+    width: 43px;
+    height: 43px;
+    background-position: -53px -10px;
+}
+.snsIcons .twitter {
+    width: 49px;
+    height: 41px;
+    background-position: -116px -10px;
+}
+.snsIcons .facebook {
+    width: 23px;
+    height: 42px;
+    background-position: -10px -10px;
+}
+footer .sns p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 32px;
+    line-height: 35px;
+    margin-top: 90px;
+}
+/* 저작권 표시 */
+.copyright {
+    font-size: 25px;
+    color: #3A466D;
+    line-height: 40px;
+    margin-left: 155px;
+}
+
