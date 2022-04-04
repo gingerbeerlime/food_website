@@ -25,20 +25,20 @@ header .logo {
     float: left;
     width: 300px;
     height: 100%;
-    margin-left: 180px;
+    margin-left: 9.375%;
 }
 header .logo img {
     float: left;
     margin-top: 62px;
-    padding-right: 22px;
 }
 header .logo h1 {
     float: left;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 47px;
+    font-size: 4.7rem;
     line-height: 63px;
     color: #23233C;
     margin-top: 63px;
+    padding-left: 20px;
 }
 /* 메인 네비 */
 header nav {
@@ -64,7 +64,7 @@ header .mainNav a {
     display: inline-block;
     width: 100%;
     height: 100%;
-    font-size: 21px;
+    font-size: 2.1rem;
     color: #7F8DA0;
     line-height: 114px;
     text-align: center;
@@ -74,7 +74,7 @@ header .mainNav a {
     float: right;
     width: 215px;
     height: 150px;
-    margin-right: 280px;
+    margin-right: 13%;
     display: flex;
     padding-top: 36px;
     box-sizing: border-box;
@@ -88,7 +88,7 @@ header .mainNav a {
     width: 100%;
     height: 100%;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 114px;
     color: #23233C;
     text-align: center;
@@ -96,19 +96,39 @@ header .mainNav a {
 .join li a.register {
     color: #6BC37C;
 }
+/* 메뉴 토글버튼(모바일용(900)) */
+.navToggle {
+    display: none;
+    float: right;
+    width: 30px;
+    height: 150px;
+    margin-right: 13%;
+    justify-content: space-between;
+    padding-top: 70px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.navToggle > div {
+    display: none;
+    width: 5px;
+    height: 35px;
+    background-color: #23233C;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
 /* 2. 메인 컨텐츠 */
 #intro {
-    width: 100%;
-    height: 930px;
-    /* background-color: #6BC37C; */
-}
-/* 소개 문구 */
-.appIntro {
     float: left;
-    width: 620px;
-    height: 750px;
-    /* background-color: white; */
-    margin: 65px 0 0 180px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+.appIntro {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 265px;
+    width: 1560px;
+    background-color: white;
+    position: relative;
 }
 .appIntro .bar {
     width: 62px;
@@ -118,96 +138,101 @@ header .mainNav a {
     margin-top: 82px;
 }
 .slogan {
-    font-size: 27px;
-    line-height: 40px;
+    font-size: 2.7rem;
+    line-height: 4rem;
     color: #7F8DA0;
     margin-top: 25px;
 }
 .mainMsg {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 67px;
-    line-height: 64px;
+    font-size: 6.7rem;
+    line-height: 6.4rem;
     color: #23233C;
     margin-top: 30px;
 }
 .mainMsg > span {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 70px;
-    line-height: 64px;
+    font-size: 7rem;
+    line-height: 6.4rem;
     color: #6CC57C;
 }
 .desc {
-    font-size: 21px;
-    line-height: 28px;
+    width: 42%;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
     color: #7F8DA0;
     margin-top: 22px;
+}
+/* 앱 다운로드 & SNS 버튼 */
+.btnsBox {
+    width: 42%;
+    height: 240px; 
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* 앱 다운로드 */
 .download {
     width: 100%;
     height: 67px;
-    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
 }
 .download .btn {
-    float: left;
     display: block;
-    width: 276px;
+    width: 42%;
     height: 67px;
     background-color: #23233C;
     border-radius: 10px;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 20;
+    font-size: 2rem;
     line-height: 67px;
     text-align: center;
     color: #ffffff;
 }
 .download .btn:hover {
     background-color: whitesmoke;
-    box-shadow: 0 0 6px #777;
     color: #23233C;
     transition: 0.3s ease;
 }
 .appIcons {
-    float: left;
-    width: 150px;
+    width: 23%;
     height: 67px;
-    margin-left: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: 23%;
 }
 /* SNS */
 .appIntro .sns {
-    width: 350px;
+    /* width: 53%; */
+    width: 390px;
     height: 33px;
-    margin-top: 130px;
     display: flex;
     justify-content: space-between;
     padding-left: 5px;
 }
 .appIntro .sns li, .sns a {
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 2rem;
+    line-height: 3.3rem;
     color: #7F8DA0;
-
 }
 .appIntro .sns a:hover {
     color: #6CC57C;
 }
-/* 애플리케이션 사진 */
-.main_img {
-    float: left;
-    width: 1080px;
-    height: 850px;
-    margin-top: 65px;
-    position: relative;
+/* 배경 도형요소 */
+#intro .bg {
+    position: absolute;
 }
 .bgCircle {
     width: 400px;
     height: 400px;
     background-color: #D0F0D6;
     border-radius: 50%;
-    margin: 130px 0 0 100px;
+    top: 40px;
+    right: 27.3%;
+    z-index: 1;
 }
 .bgSquare {
     width: 740px;
@@ -216,37 +241,36 @@ header .mainNav a {
     box-shadow: 50px 50px 50px #ABB6CC33;
     border-radius: 49px;
     transform: rotate(37deg);
-    position: absolute;
     top: -120px;
-    right: -650px;
-    z-index: 1;
+    right: -51.2%;
+    z-index: 2;
 }
-/* 화면 이미지 */
-.main_img > img {
+/* 애플리케이션 사진 */
+#intro .appImg {
     position: absolute;
 }
 .imgLogin {
-    top: 0;
-    left: 155px;
+    top: -73px;
+    right: 31%;
     z-index: 10;
     box-shadow: 0px 0px 99px #2A5A7B3B;
     border-radius: 30px;
 }
 .imgNutri {
-    top: -10px;
-    left: 300px;
+    top: -80px;
+    right: 11%;
     z-index: 20;
 }
 .imgHome {
-    top: 180px;
-    left: 520px;
+    top: 105px;
+    right: 7.37%;
     z-index: 30;
     box-shadow: 0px 3px 80px #2A5A7B3B;
     border-radius: 30px;
 }
 .imgWeekly {
-    top: 400px;
-    left: 550px;
+    top: 300px;
+    right: -10.65%;
     z-index: 40;
 }
 /* [2] 서브 컨텐츠 */
@@ -613,4 +637,138 @@ footer .sns p {
     line-height: 40px;
     margin-left: 155px;
 }
+/* 반응형(1400px 이상) */
+/* 이미지 0.75 */
+@media screen and (max-width:1400px) {
+    html {
+        font-size: 8px;
+    }
+    /* 로고 */
+    header .logo {
+        margin-left: 3%;
+    }
+    /* 로그인 & 회원가입 */
+    .join {
+        margin-right: 3%;
+    }
+    /* 2. 메인 컨텐츠 */
+    .appIntro {
+        margin-top: 60px;
+        margin-bottom: 265px;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        padding-left: 5%;
+        box-sizing: border-box;
+    }
+    .appIntro .sns {
+        width: 300px;
+    }
+    /* 배경 도형요소 */
+    .bgCircle {
+        width: 300px;
+        height: 300px;
+        top: 50px;
+        right: 27.3%;
+    }
+    .bgSquare {
+        width: 555px;
+        height: 450px;
+        top: -120px;
+        right: -51.2%;
+    }
+    /* 애플리케이션 사진 */
+    .imgLogin,
+    .imgHome {
+        width: 216px;
+    }
+    .imgLogin {
+        top: 0;
+        right: 30.5%;
+    }
+    .imgNutri {
+        width: 346.5px;
+        top: -10px;
+        right: 13%;
+    }
+    .imgHome {
+        top: 120px;
+        right: 9%;
+    }
+    .imgWeekly {
+        width: 390px;
+        top: 300px;
+        right: -1%;
+    }
+}
+/* 반응형(1200px 이상) */
+@media screen and (max-width:1200px) {
+   /* 메인 네비 */
+    header nav {
+        width: 300px;
+        margin-left: -150px; 
+    }
+    header .mainNav a {
+        font-size: 1.8rem;
+    }
+    /* 배경 도형요소 */
+     .bgCircle {
+        display: none;
+    }
+    /* 애플리케이션 사진 */
+    .imgLogin,
+    .imgHome {
+        width: 216px;
+    }
+    .imgLogin {
+        display: none;
+    }
+    .imgNutri {
+        display: none;
+    }
+    .imgHome {
+        top: 50px;
+        right: 25%;
+    }
+    .imgWeekly {
+        top: 250px;
+        right: 5%;
+    }
+}
+/* 반응형(1100px 이상) */
+@media screen and (max-width:1100px) {
+    /* 애플리케이션 사진 */
+    .imgHome {
+        top: 50px;
+        right: 15%;
+    }
+    .imgWeekly {
+        top: 250px;
+        right: 0%;
+    }
+}
+/* 반응형(900px 이상) */
+@media screen and (max-width:900px) {
+    /* 메인 네비 */
+    header nav {
+         display: none;
+    }
+    /* 로고 */
+    header .logo {
+        margin-left: 7%;
+    }
+    /* 로그인 & 가입 버튼 */
+    .join {
+        display: none;
+    }
+    /* 메뉴 토글버튼(모바일용(900)) */
+    .navToggle {
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navToggle > div {
+        display: block;
+    }
+ }
 

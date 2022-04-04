@@ -7,6 +7,8 @@
     <title>Daietto</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- 반응형(414px) -->
+    <link rel="stylesheet" href="css/mediaquery_414.css">
 </head>
 <body>
     <div id="wrap">
@@ -15,7 +17,7 @@
             <!-- 1. 헤더 -->
             <header>
                 <!-- 로고 -->
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img src="image/logo.png" alt="logo">
                     <h1>Daietto</h1>
                 </a>
@@ -32,45 +34,47 @@
                     <li><a class="login" href="#">Login</a></li>
                     <li><a class="register" href="#">Register</a></li>
                 </ul>
+                <!-- 메뉴 토글버튼(모바일용(900)) -->
+                <div class="navToggle">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
             </header>
             <!-- 2. 메인 컨텐츠 -->
             <article id="intro">
-                <!-- 소개 문구 -->
                 <div class="appIntro">
                     <div class="bar"></div>
-                    <h3 class="slogan">La app de dieta, perfecta para ti</h3>
+                    <p class="slogan">La app de dieta, perfecta para ti</p>
                     <h2 class="mainMsg">
                         <span>Deliciosas</span><br/>recetas de comida<br/>saludable
                     </h2>
                     <p class="desc">Encuentra las mejores recetas para llevar tu dieta a otro nivel, sin necesidad de afectar su salud</p>
-                    <!-- 앱 다운로드 -->
-                    <div class="download">
-                        <a href="#" class="btn">Descargar app</a>
-                        <div class="appIcons">
-                            <a href="#" class="appple"><img src="image/app_store.png" alt="appstore"></a>
-                            <a href="#" class="android"><img src="image/android-logo.png" alt="googlestore"></a>
+                    <!-- 앱 다운로드 & SNS 버튼 -->
+                    <div class="btnsBox">
+                        <!-- 앱 다운로드 -->
+                        <div class="download">                            
+                            <a href="#" class="btn">Descargar app</a>
+                            <div class="appIcons">
+                                <a href="#" class="appple"><img src="image/app_store.png" alt="appstore"></a>
+                                <a href="#" class="android"><img src="image/android-logo.png" alt="googlestore"></a>
+                            </div>
                         </div>
+                        <!-- SNS -->
+                        <ul class="sns">
+                            <li><a href="#">Facebook</a></li>
+                            <li>/</li>
+                            <li><a href="#">Instagram</a></li>
+                            <li>/</li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
                     </div>
-                    <!-- SNS -->
-                    <ul class="sns">
-                        <li><a href="#">Facebook</a></li>
-                        <li>/</li>
-                        <li><a href="#">Instagram</a></li>
-                        <li>/</li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </div>
-                <!-- 애플리케이션 사진 -->
-                <div class="main_img">
-                    <!-- 원 -->
-                    <div class="bgCircle"></div>
-                    <!-- 사각형 -->
-                    <div class="bgSquare"></div>
-                    <!-- 화면 이미지 -->
-                    <img class="imgLogin" src="image/screen_login.png" alt="login screen">
-                    <img class="imgNutri" src="image/nutri_info.png" alt="nutritional information">
-                    <img class="imgHome" src="image/screen_home.png" alt="home screen">
-                    <img class="imgWeekly" src="image/weekly_result.png" alt="weekly result">
+                    <!-- 애플리케이션 사진 -->
+                    <div class="bg bgCircle"></div>
+                    <div class="bg bgSquare"></div>
+                    <img class="appImg imgLogin" src="image/screen_login.png" alt="login screen">
+                    <img class="appImg imgNutri" src="image/nutri_info.png" alt="nutritional information">
+                    <img class="appImg imgHome" src="image/screen_home.png" alt="home screen">
+                    <img class="appImg imgWeekly" src="image/weekly_result.png" alt="weekly result"> 
                 </div>
             </article>
         </section>

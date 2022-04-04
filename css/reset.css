@@ -91,8 +91,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    font-size: 10px;
     vertical-align: baseline;
     font-family: 'Noto Sans', sans-serif;
   }
@@ -136,4 +135,13 @@
   a {
     text-decoration: none;
   }
+  button{
+    background: inherit; 
+    border:none; 
+    box-shadow:none; 
+    border-radius:0; 
+    padding:0; 
+    overflow:visible; 
+    cursor:pointer
+  } 
   
