@@ -10,8 +10,8 @@ body {
 }
 /* [1] 메인화면 */
 #main {
+    float: left;
     width: 100%;
-    height: 1080px;
     background-color: #F2F6FF;
 }
 /* 1. 헤더 */
@@ -120,14 +120,14 @@ header .mainNav a {
 #intro {
     float: left;
     width: 100%;
-    background-color: lightgoldenrodyellow;
+    margin-top: 50px;
 }
 .appIntro {
     margin: 0 auto;
     margin-top: 60px;
-    margin-bottom: 265px;
+    /* margin-bottom: 265px; */
+    margin-bottom: 150px;
     width: 1560px;
-    background-color: white;
     position: relative;
 }
 .appIntro .bar {
@@ -192,12 +192,14 @@ header .mainNav a {
     color: #ffffff;
 }
 .download .btn:hover {
-    background-color: whitesmoke;
+    background-color: white;
     color: #23233C;
+    box-shadow: 0 0 6px #999;
+    border-radius: 30px;
     transition: 0.3s ease;
 }
 .appIcons {
-    width: 23%;
+    width: 150px;
     height: 67px;
     display: flex;
     justify-content: space-around;
@@ -206,7 +208,6 @@ header .mainNav a {
 }
 /* SNS */
 .appIntro .sns {
-    /* width: 53%; */
     width: 390px;
     height: 33px;
     display: flex;
@@ -259,7 +260,7 @@ header .mainNav a {
 .imgNutri {
     top: -80px;
     right: 11%;
-    z-index: 20;
+    z-index: 35;
 }
 .imgHome {
     top: 105px;
@@ -275,8 +276,8 @@ header .mainNav a {
 }
 /* [2] 서브 컨텐츠 */
 #contents {
+    float: left;
     width: 100%;
-    height: 1730px;
     background-color: #F2F6FF;
     position: relative;
 }
@@ -317,13 +318,14 @@ header .mainNav a {
 #con1 {
     width: 100%;
     height: 765px;
+    display: flex;
 }
 /* 이미지 영역 */
 .con1_img {
-    float: left;
-    width: 840px;
+    /* float: left; */
+    width: 43.75%;
     height: 100%;
-    margin-left: 180px;
+    margin-left: 9.375%;
     display: flex;
     justify-content: space-between;
 }
@@ -335,13 +337,14 @@ header .mainNav a {
 }
 #con1 .container {
     position: relative;
-    width: 306px;
+    /* width: 306px; */
+    width: 72.8%;
     height: 440px;
     background: transparent linear-gradient(144deg, #F2F6FF 0%, #F2F6FF 65%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 50px 50px 50px #ABB6CC33;
     border-radius: 153px 153px 50px 50px;
     margin-top: 108px;
-    padding: 0 45px;
+    padding: 0 4.5rem;
     box-sizing: border-box;
 }
 /* 메뉴 이미지 */
@@ -368,8 +371,8 @@ header .mainNav a {
 }
 #con1 .txtBox .menu {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 33px;
-    line-height: 38px;
+    font-size: 3.3rem;
+    line-height: 3.8rem;
     color: #23233C;
 }
 /* 영양정보 */
@@ -379,19 +382,21 @@ header .mainNav a {
     margin-top: 15px;
 }
 .nutri li {
-    width: 55px;
+    /* width: 55px; */
+    width: 25.8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     float: left;
 }
 .nutri li:last-child {
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    margin-left: 14%;
 }
 .nutri p {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 26px;
-    line-height: 35px;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
     color: #23233C;
 }
 .nutri p.cal {
@@ -399,8 +404,8 @@ header .mainNav a {
 }
 .nutri span {
     display: block;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     color: #7F8DA0;
 }
 /* 상세보기 버튼 */
@@ -424,8 +429,9 @@ header .mainNav a {
 }
 /* 설명글 영역 */
 #con1 .explanation {
-    float: left;
-    width: 695px;
+    /* float: left; */
+    /* width: 695px; */
+    width: 36.2%;
     height: 100%;
     padding: 0 34px;
     box-sizing: border-box;
@@ -439,19 +445,20 @@ header .mainNav a {
 }
 .explanation .ttl {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 50px;
-    line-height: 63px;
+    font-size: 5rem;
+    line-height: 6.3rem;
     color: #23233C;
 }
 .explanation .ttl > span {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 50px;
-    line-height: 63px;
+    font-size: 5rem;
+    line-height: 6.3rem;
     color: #6CC57C;
 }
 .explanation .desc {
-    font-size: 25px;
-    line-height: 28px;
+    width: 88.4%;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
     color: #7F8DA0;
     margin-top: 90px;
 }
@@ -460,13 +467,13 @@ header .mainNav a {
 #con2 {
     width: 100%;
     height: 965px;
+    display: flex;
 }
 #con2 .explanation {
-    float: left;
-    width: 740px;
+    width: 38.54%;
     height: 100%;
-    margin-left: 180px;
-    padding-left: 108px;
+    margin-left: 9.375%;
+    padding-left: 5.625%;
     box-sizing: border-box;
 }
 #con2 .explanation .desc {
@@ -474,8 +481,7 @@ header .mainNav a {
 }
 /* 이미지 영역 */
 .con2_img {
-    float: left;
-    width: 795px;
+    width: 41.4%;
     height: 100%;
     position: relative;
 }
@@ -528,8 +534,8 @@ header .mainNav a {
 footer {
     float: left;
     width: 100%;
-    height: 540px;
     background-color: #F2F6FF;
+    padding-top: 70px;
 }
 /* 푸터 상단영역(회사 정보) */
 .companyInfo {
@@ -542,7 +548,8 @@ footer {
 /* 로고 */
 footer .logo {
     display: block;
-    width: 350px;
+    /* width: 350px; */
+    width: 21.6%;
     height: 86px;
 }
 footer .logo img {
@@ -553,16 +560,21 @@ footer .logo img {
 footer .logo h1 {
     float: left;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 61px;
-    line-height: 86px;
+    font-size: 6.1rem;
+    line-height: 8.6rem;
     color: #23233C;
-    padding-left: 23px;
+    padding-left: 2.3rem;
+}
+.companyInfo nav {
+    /* width: 630px; */
+    width: 38.88%;
 }
 /* 회사정보(네비) */
 .infoNav {
-    width: 630px;
+    width: 100%;
     height: 200px;
-    margin-left: 105px;
+    /* margin-left: 105px; */
+    margin-left: 6.48%;
     display: flex;
 }
 .infoNav li {
@@ -579,14 +591,14 @@ footer .logo h1 {
 }
 .infoNav li ul li.ttl {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 32px;
-    line-height: 50px;
+    font-size: 3.2rem;
+    line-height: 5rem;
     color: #6CC57C;
 }
 .infoNav li ul li a {
     display: block;
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 2.4rem;
+    line-height: 5rem;
     color: #3A466D;
 }
 .infoNav li ul li a:hover {
@@ -597,7 +609,7 @@ footer .logo h1 {
 footer .sns {
     width: 220px;
     height: 100%;
-    margin-left: 175px;
+    margin-left: 10.8%;
 }
 footer .snsIcons {
     width: 100%;
@@ -632,16 +644,74 @@ footer .sns p {
 }
 /* 저작권 표시 */
 .copyright {
-    font-size: 25px;
+    height: 40px;
+    font-size: 2.5rem;
     color: #3A466D;
     line-height: 40px;
-    margin-left: 155px;
+    margin-left: 8.1%;
+    margin-bottom: 150px;
+}
+
+
+
+/* 반응형(1700px 이상) */
+@media screen and (max-width:1700px) {
+    /* [2] 서브 컨텐츠 */
+    /* 1. 컨텐츠1 */
+    /* 이미지 영역 */
+    .con1_img {
+        width: 47.75%;
+        margin-left: 4.375%;
+    }
+    /* 설명글 영역 */
+    #con1 .explanation {
+        width: 40%;
+    }
+    /* 2. 컨텐츠2 */
+    /* 설명글 영역 */
+    #con2 .explanation {
+        width: 43.54%;
+        margin-left: 4.375%;
+    }
+    /* 이미지 영역 */
+    .con2_img {
+        width: 50%;
+    }
+    /* 화면 스크린샷 */
+    .imgYogurt {
+        position: absolute;
+        top: -100px;
+        left: 170px;
+        z-index: 300;
+    }
+    .imgNutri2 {
+        position: absolute;
+        top: 180px;
+        left: -20px;
+        z-index: 310;
+    } 
+    /* 배경도형 */
+    .bgSquare2 {
+        left: -700px;
+    }
+    /* 푸터 */
+    /* 저작권 표시 */
+    .copyright {
+        margin-left: 5%;
+    }
 }
 /* 반응형(1400px 이상) */
 /* 이미지 0.75 */
 @media screen and (max-width:1400px) {
     html {
         font-size: 8px;
+    }
+    /* 메인 네비 */
+    header .mainNav a {
+        font-size: 2.5rem;
+    }
+    .join li a {
+        font-size: 2.7rem;
     }
     /* 로고 */
     header .logo {
@@ -654,12 +724,9 @@ footer .sns p {
     /* 2. 메인 컨텐츠 */
     .appIntro {
         margin-top: 60px;
-        margin-bottom: 265px;
+        margin-bottom: 0px;
         width: 100%;
-        background-color: white;
-        position: relative;
         padding-left: 5%;
-        box-sizing: border-box;
     }
     .appIntro .sns {
         width: 300px;
@@ -700,6 +767,93 @@ footer .sns p {
         top: 300px;
         right: -1%;
     }
+    /* [2] 서브 컨텐츠 */
+    /* 배경요소 */
+    .bgSquare3 {
+        top: 600px;
+        right: -300px;
+    }
+    /* 1. 컨텐츠1 */
+    #con1 {
+        height: 700px;
+    }
+    /* 이미지 영역 */
+    .con1_img > li {
+        width: 100%;
+    }
+    .con1_img > li:last-child {
+        display: none;
+    }
+    #con1 .container {
+        width: 306px;
+        margin-top: 150px;
+    }
+    /* 컨텐츠2 */
+    #con2 {
+        height: 700px;
+    }
+    /* 화면 스크린샷 */
+    .imgYogurt {
+        width: 440.25px;
+        top: 0px;
+        left: 100px;
+    }
+    .imgNutri2 {
+        width: 513px;
+        top: 180px;
+        left: -20px;
+    }
+    .ingredients {
+        width: 482px;
+        height: 90px;
+        position: absolute;
+        top: 500px;
+        left: 80px;
+    }
+    .ingredients li {
+        width: 90px;
+        height: 90px;
+        background-image: url("../image/ingredients_m.png");
+    }
+    .ingredients li.yogurt {
+        background-position: -120px -10px;
+    }
+    .ingredients li.kiwi {
+        background-position: -10px -10px;
+    }
+    .ingredients li.blueberry {
+        background-position: -230px -10px;
+    }
+    .ingredients li.cherry {
+        background-position: -10px -121px;
+    }
+    /* 푸터 상단영역(회사 정보) */
+    .companyInfo {
+        width: 100%;
+        height: 250px;
+        margin-top: 106px;
+    }
+    /* 로고 */
+    footer .logo {
+        width: 23.6%;
+        height: 86px;
+        margin-left: 5%;
+    }
+    footer .logo img {
+        width: 68.25px;
+        height: 64.5px;
+    }
+    /* 회사정보(네비) */
+    .infoNav {
+        margin-left: 10%;
+    }
+    /* SNS */
+    footer .sns {
+        width: 200px;
+    }
+    footer .sns p {
+        display: none;
+    }
 }
 /* 반응형(1200px 이상) */
 @media screen and (max-width:1200px) {
@@ -710,6 +864,10 @@ footer .sns p {
     }
     header .mainNav a {
         font-size: 1.8rem;
+    }
+    /* 메인컨텐츠 */
+    .appIcons {
+        margin-right: 10%;
     }
     /* 배경 도형요소 */
      .bgCircle {
@@ -734,6 +892,22 @@ footer .sns p {
         top: 250px;
         right: 5%;
     }
+    .explanation .desc {
+        width: 100%;
+        margin-top: 50px;
+    }
+    /* 푸터 */
+    .companyInfo {
+        justify-content: space-around;
+        height: 150px;
+    }
+    /* 로고 */
+    footer .logo {
+        width: 50%;
+    }
+    .companyInfo nav {
+        display: none;
+    }
 }
 /* 반응형(1100px 이상) */
 @media screen and (max-width:1100px) {
@@ -749,6 +923,9 @@ footer .sns p {
 }
 /* 반응형(900px 이상) */
 @media screen and (max-width:900px) {
+    html {
+        font-size: 10px;
+    }
     /* 메인 네비 */
     header nav {
          display: none;
@@ -770,5 +947,190 @@ footer .sns p {
     .navToggle > div {
         display: block;
     }
+    /* 2. 메인 컨텐츠 */
+    .appIntro {
+        margin-top: 0;
+        width: 100%;
+    }
+    .appIntro .bar {
+        margin-top: 10px;
+    }
+    /* 앱 다운로드 & SNS 버튼 */
+    .btnsBox {
+        width: 100%;
+        height: 240px; 
+        margin-top: 920px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    /* 앱 다운로드 */
+    .download {
+        height: 155px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .download .btn {
+        width: 350px;
+    }
+    .appIcons {
+        width: 180px;
+        margin-right: 0;
+    }
+    .desc {
+        width: 70%;
+        font-size: 2.1rem;
+        line-height: 2.8rem;
+        color: #7F8DA0;
+        margin-top: 22px;
+    }
+    /* 애플리케이션 사진 */
+    .bgCircle {
+        display: block;
+    }
+    .bgCircle {
+        width: 400px;
+        height: 400px;
+        top: 550px;
+        left: 4.5%;
+    }
+    .imgLogin {
+        display: block;
+    }
+    .imgNutri { 
+        display: block;
+    }
+    .imgLogin {
+        width: 288px;
+        top: 450px;
+        left: 10.38%;
+    }
+    .imgNutri {
+        width: 462px;
+        top: 450px;
+        left: 25%;
+    }
+    .imgHome {
+        width: 288px;
+        top: 580px;
+        left: 58.2%;
+    }
+    .imgWeekly {
+        width: 520px;
+        top: 960px;
+        left: 7%;
+    }
+    /* [2] 서브 컨텐츠 */
+    /* 배경요소 */
+    .bgCircle2 {
+        display: none;
+    }
+    .bgSquare2 {
+        top: 300px;
+        left: -700px;
+    }
+    .bgSquare3 {
+        top: 1200px;
+        right: -700px;
+    }
+    /* 1. 컨텐츠1 */
+     /* 이미지 영역 */
+    #con1 {
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /* 이미지 영역 */
+    .con1_img {
+        width: 100%;
+        height: 58%;
+        margin-left: 0;
+    }
+    .con1_img > li:last-child {
+        display: flex;
+    }
+    .con1_img > li {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    #con1 .container {
+        width: 72.8%;
+        margin-top: 150px;
+    }
+    #con1 .box2 {
+        margin-top: 250px;
+    }
+    /* 메뉴 이미지 */
+    #con1 .container img.mn1 {
+        left: -28px;
+    }
+    #con1 .container img.mn2 {
+        left: 0px;
+    }
+    /* 설명글 영역 */
+    #con1 .explanation {
+        width: 100%;
+        height: 42%;
+    }
+    /* 2. 컨텐츠2 */
+    /* 설명글 영역 */
+    #con2 {
+        height: 1600px;
+        flex-direction: column;
+    }
+    #con2 .explanation {
+        width: 100%;
+        height: 40%;
+        margin-left: 0;
+        padding: 0 34px;
+    }
+    /* 이미지 영역 */
+    .con2_img {
+        width: 100%;
+        height: 60%;
+        position: relative;
+    }
+    /* 화면 스크린샷 */
+    .imgYogurt {
+        width: 587px;
+        top: -100px;
+        left: 50%;
+        margin-left: -268.5px;
+    }
+    .imgNutri2 {
+        width: 684px;
+        top: 240px;
+        left: 50%;
+        margin-left: -342px;
+    }
+    .ingredients {
+        width: 642px;
+        top: 700px;
+        left: 50%;
+        margin-left: -321px;
+    }
+    .ingredients li {
+        width: 120px;
+        height: 120px;
+        background-image: url("../image/ingredients.png");
+    }
+    .ingredients li.yogurt {
+        background-position: -10px -10px;
+    }
+    .ingredients li.kiwi {
+        background-position: -150px -150px;
+    }
+    .ingredients li.blueberry {
+        background-position: -150px -10px;
+    }
+    .ingredients li.cherry {
+        background-position: -10px -150px;
+    } 
  }
+ /* 반응형(700px 이상) */
+@media screen and (max-width:700px) {
+    
+}
+ 
 
