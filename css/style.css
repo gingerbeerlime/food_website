@@ -544,11 +544,11 @@ footer {
     height: 300px;
     margin-top: 106px;
     display: flex;
+    justify-content: space-around;
 }
 /* 로고 */
 footer .logo {
     display: block;
-    /* width: 350px; */
     width: 21.6%;
     height: 86px;
 }
@@ -648,7 +648,7 @@ footer .sns p {
     font-size: 2.5rem;
     color: #3A466D;
     line-height: 40px;
-    margin-left: 8.1%;
+    margin-left: 10%;
     margin-bottom: 150px;
 }
 
@@ -726,7 +726,8 @@ footer .sns p {
         margin-top: 60px;
         margin-bottom: 0px;
         width: 100%;
-        padding-left: 5%;
+        padding: 0 5%;
+        box-sizing: border-box;
     }
     .appIntro .sns {
         width: 300px;
@@ -947,6 +948,10 @@ footer .sns p {
     .navToggle > div {
         display: block;
     }
+    /* 배경 도형 */
+    .bgSquare {
+        display: none;
+    }
     /* 2. 메인 컨텐츠 */
     .appIntro {
         margin-top: 0;
@@ -1033,7 +1038,7 @@ footer .sns p {
         right: -700px;
     }
     /* 1. 컨텐츠1 */
-     /* 이미지 영역 */
+    /* 이미지 영역 */
     #con1 {
         width: 100%;
         height: 1400px;
@@ -1130,7 +1135,157 @@ footer .sns p {
  }
  /* 반응형(700px 이상) */
 @media screen and (max-width:700px) {
-    
+    html {
+        font-size: 8px;
+    }
+    /* 애플리케이션 사진 */
+    .imgLogin,
+    .imgHome {
+        width: 216px;
+    }
+    .imgLogin {
+        top: 450px;
+        left: 10.38%;
+    }
+    .imgHome {
+        top: 580px;
+        right: 12%;
+    }
+    .imgNutri {
+        width: 346.5px;
+        top: 450px;
+        left: 25%;
+    }
+    .imgWeekly {
+        width: 390px;
+        top: 800px;
+        left: 7%;
+    }
+    .bgCircle {
+        display: none;
+    }
+    /* 1. 컨텐츠1 */
+     /* 이미지 영역 */
+     #con1 {
+        width: 100%;
+        height: 1800px;
+        flex-direction: column-reverse;
+    }
+    /* 이미지 영역 */
+    .con1_img {
+        width: 100%;
+        height: 70%;
+        flex-direction: column;
+    }
+    .con1_img > li {
+        width: 100%;
+        align-items: center;
+    }
+    #con1 .container {
+        width: 306px;
+        margin-top: 0;
+    }
+    #con1 .box2 {
+        margin-top: 0;
+    }
+    /* 메뉴 이미지 */
+    #con1 .container img.mn1 {
+        left: -28px;
+    }
+    #con1 .container img.mn2 {
+        left: 0px;
+    }
+    /* 메뉴정보 */
+    #con1 .txtBox .menu {
+        font-size: 3.7rem;
+        line-height: 4.5rem;
+    }
+    /* 영양정보 */
+    .nutri p {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+    .nutri span {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    /* 설명글 영역 */
+    #con1 .explanation {
+        width: 100%;
+        height: 30%;
+    }
+    /* 컨텐츠2 */
+    #con2 {
+        height: 1300px;
+    }
+    #con2 .explanation .bar {
+        margin-top: 100px;
+    }
+    /* 이미지 영역 */
+    .imgYogurt {
+        width: 440.25px;
+        top: -100px;
+        margin-left: -220.125px;
+    }
+    .imgNutri2 {
+        width: 513px;
+        top: 160px;
+        margin-left: -270px;
+    }
+    .ingredients {
+        width: 482px;
+        height: 90px;
+        top: 530px;
+        margin-left: -241px;
+    }
+    .ingredients li {
+        width: 90px;
+        height: 90px;
+        background-image: url("../image/ingredients_m.png");
+    }
+    .ingredients li.yogurt {
+        background-position: -120px -10px;
+    }
+    .ingredients li.kiwi {
+        background-position: -10px -10px;
+    }
+    .ingredients li.blueberry {
+        background-position: -230px -10px;
+    }
+    .ingredients li.cherry {
+        background-position: -10px -121px;
+    }
+    /* 푸터 */
+    .companyInfo {
+        height: 200px;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* 로고 */
+    footer .logo {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    /* SNS */
+    footer .sns {
+        width: 200px;
+        height: 80px;
+        margin-left: 0;
+    }
+    /* 저작권표시 */
+    .copyright {
+        width: 100%;
+        height: 140px;
+        font-size: 2.5rem;
+        margin-left: 0%;
+        text-align: center;
+        line-height: 140px;
+    }
 }
+/* 반응형(550px 이상) */
  
 
